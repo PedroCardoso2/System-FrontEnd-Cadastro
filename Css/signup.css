@@ -19,18 +19,26 @@ body{
     color: white;
 }
 
-input{
+
+input.firstname, input.lastname, input.emaill, input.pass, input.confirmpassword {
     color: #FFF;
 }
 
+
+
+
 .conteiner{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: normal;
-    margin-top: 2.5em;
+    
 }
 
 .form{
+    margin-top: 1rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +51,7 @@ input{
 
 /* USUÁRIO / PASSWORD */
 
-.firstname, .lastname, .emaill, .dateBirth, .confirmpassword, .pass{
+.lastname, .firstname, .emaill, .dateBirth, .confirmpassword, .pass{
     outline: none;
     border: none;
     background: none;
@@ -51,9 +59,16 @@ input{
     
 }
 
-.firstname::placeholder, .lastname::placeholder, .emaill::placeholder, .datebirth::placeholder, .confirmpassword::placeholder , .pass::placeholder{
+.firstname::placeholder, .lastname::placeholder, .emaill::placeholder, .confirmpassword::placeholder , .pass::placeholder{
     color: #FFF;
 }
+
+
+
+.lastname, .confirmpassword {
+    margin-left: 2rem;
+  }
+  
 
 .lastname::placeholder,.confirmpassword::placeholder{
     padding: 10px;
@@ -72,7 +87,7 @@ input{
     display: flex;
     align-items: center;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .imgEmail, .imgData{
@@ -88,11 +103,22 @@ input{
 }
 
 .img{
-    margin-bottom: 35px;
+    height: 33.3%;
+    margin-bottom: 0.7rem;
 }
 
+.entradas {
+    height: 33.3%;
+    width: 100%;
+}
 
-.buttonLogin{
+.button {
+    align-items: center;
+    height: 33.3%;
+    margin-bottom: 1rem;
+}
+
+.buttonSignup{
     width: 250px;
     height: 45px;
     flex-shrink: 0;
@@ -106,12 +132,9 @@ input{
     transition: 0.5s;
 }
 
-.buttonLogin:hover{
+.buttonSignup:hover{
     background: #d5d5d5;
 }
-
-
-
 
 
 .forget{
