@@ -27,14 +27,15 @@ input{
     display: flex;
     justify-content: center;
     align-items: normal;
-    margin-top: 9.375em;
+    margin-top: 2.5em;
 }
 
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
+  
 }
 
 /* BUTTONS / INPUTS / IMGS */
@@ -52,6 +53,10 @@ input{
 
 .firstname::placeholder, .lastname::placeholder, .emaill::placeholder, .datebirth::placeholder, .confirmpassword::placeholder , .pass::placeholder{
     color: #FFF;
+}
+
+.lastname::placeholder,.confirmpassword::placeholder{
+    padding: 10px;
 }
 
 
